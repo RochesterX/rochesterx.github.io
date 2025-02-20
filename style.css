@@ -12,3 +12,28 @@ p {
     color: #eeeeee;
     font: 16px tahoma, sans-serif;
 }
+
+.boxed {
+    border: 5px solid white;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 500px;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.boxed:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+@media (max-width: 500px) {
+    .boxed {
+        flex-direction: column; /* Stack image and text on small screens */
+        text-align: center;
+    }
+}

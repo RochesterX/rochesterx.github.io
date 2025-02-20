@@ -15,6 +15,10 @@ p {
     font: 16px tahoma, sans-serif;
 }
 
+.padding {
+    padding-left: 20px;
+}
+
 .boxed {
     border: 5px solid white;
     margin: 0px;
@@ -29,7 +33,7 @@ p {
 }
 
 .boxed:hover {
-    transform: translateY(-5px);
+    transform: translate(-5px, -5px);
     box-shadow: 8px 8px 16px rgba(255, 255, 255, 0.2);
 }
 

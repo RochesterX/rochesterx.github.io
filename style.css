@@ -6,6 +6,8 @@ h1 {
     color: #ffffff;
     font: 16px "Verdana";
     font-size: 32px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
 }
 
 p {
@@ -19,21 +21,60 @@ p {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.2);
+    box-shadow: 6px 6px 8px rgba(255, 255, 255, 0.1);
     padding: 15px;
     max-width: 500px;
     gap: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .boxed:hover {
-    transform: translateY(-5px); /* Slight lift effect */
-    box-shadow: 8px 8px 16px rgba(255, 255, 255, 0.2); /* Stronger shadow */
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card {
+    opacity: 0;
+    animation: largeFadeIn 1s 0.75s ease-out forwards;
+}
+
+.hello-world {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.hello-world:hover {
+    transform: translateX(20px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes largeFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 500px) {
     .boxed {
-        flex-direction: column; /* Stack image and text on small screens */
+        flex-direction: column;
+        /* Stack image and text on small screens */
         text-align: center;
     }
 }

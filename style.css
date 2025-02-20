@@ -19,7 +19,7 @@ p {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.2);
     padding: 15px;
     max-width: 500px;
     gap: 15px;
@@ -28,7 +28,7 @@ p {
 
 .boxed:hover {
     transform: translateY(-5px); /* Slight lift effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    box-shadow: 8px 8px 16px rgba(255, 255, 255, 0.2); /* Stronger shadow */
 }
 
 @media (max-width: 500px) {

@@ -82,3 +82,10 @@ p {
         text-align: center;
     }
 }
+
+.copyright {
+    color: #606060;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}

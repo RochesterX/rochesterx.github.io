@@ -41,7 +41,7 @@ p {
 @keyframes fly-in-right {
     from {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(40px);
     }
 
     to {
@@ -52,6 +52,11 @@ p {
 
 a {
     text-decoration: none;
+}
+
+.padding a:hover {
+    text-decoration: underline;
+    text-decoration-color: #0d99cc;
 }
 
 hr {
@@ -86,7 +91,7 @@ hr {
 
 .card {
     opacity: 0;
-    animation: largeFadeIn 1s 0.75s ease-out forwards;
+    animation: largeFadeIn 1s 1s ease-out forwards;
 }
 
 .hello-world {

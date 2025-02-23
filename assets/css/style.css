@@ -59,6 +59,14 @@ a {
     text-decoration-color: #0d99cc;
 }
 
+.card a:hover {
+    text-decoration: none;
+}
+
+.card-nodelay a:hover {
+    text-decoration: none;
+}
+
 hr {
     height: 1px;
     width: calc(100% - 60px);
@@ -92,6 +100,11 @@ hr {
 .card {
     opacity: 0;
     animation: largeFadeIn 1s 1s ease-out forwards;
+}
+
+.card-nodelay {
+    opacity: 0;
+    animation: largeFadeIn 1s 0s ease-out forwards;
 }
 
 .hello-world {

@@ -147,6 +147,11 @@ hr {
         align-items: flex-start;
     }
 
+    .padding {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: center;

@@ -161,6 +161,46 @@ hr {
         display: none;
     }
 }
+@media (pointer: coarse) {
+    .boxed {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .padding {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+}
+@media (pointer: none) {
+    .boxed {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .padding {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+}
 
 .copyright {
     flex-grow: 1;

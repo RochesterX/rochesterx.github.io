@@ -75,6 +75,7 @@ hr {
 
 .padding {
     padding-left: 100px;
+    padding-right: 100px;
 }
 
 .boxed {
@@ -140,11 +141,64 @@ hr {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 10cm) {
     .boxed {
         flex-direction: column;
-        /* Stack image and text on small screens */
-        text-align: center;
+        align-items: flex-start;
+    }
+
+    .padding {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+}
+@media (pointer: coarse) {
+    .boxed {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .padding {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+}
+@media (pointer: none) {
+    .boxed {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .padding {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-line {
+        display: none;
     }
 }
 

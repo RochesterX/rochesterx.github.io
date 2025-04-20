@@ -33,9 +33,26 @@ p {
     animation: fly-in-right 1s ease 0.5s forwards;
 }
 
+.unanimated-text p {
+    opacity: 1;
+    animation: none;
+    text-align: left;
+    margin-left: 30px;
+    max-width: 400px;
+}
+
 .card-text p {
     opacity: 1;
     animation: none;
+}
+
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 20px;
 }
 
 @keyframes fly-in-right {
@@ -103,6 +120,15 @@ hr {
     box-shadow: 6px 6px 8px rgba(255, 255, 255, 0.1);
     gap: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    background-color: black;
+    max-width: 1000px;
+}
+
+.boxed-unlimited img {
+    width: 100%;
+    border: solid white 0px;
+    border-radius: 10px;
+    object-fit: contain;
 }
 
 .boxed:hover {
@@ -114,6 +140,15 @@ hr {
 .card {
     opacity: 0;
     animation: largeFadeIn 1s 1s ease-out forwards;
+}
+
+.manual {
+    opacity: 0;
+    animation: largeFadeIn 1s 1s ease-out forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-nodelay {
@@ -154,26 +189,6 @@ hr {
     }
 }
 
-@media (max-width: 800px), (max-width: 10cm) {
-    .boxed {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .padding {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .vertical-line {
-        display: none;
-    }
-}
 @media (pointer: coarse) {
     .boxed {
         flex-direction: column;
@@ -257,6 +272,13 @@ a.button:hover {
     display: flex;
     font: 16px tahoma, sans-serif;
     justify-content: flex-end;
+}
+
+.vertical-buttons {
+    display: flex;
+    font: 16px tahoma, sans-serif;
+    justify-content: left;
+    margin-left: 20px;
 }
 
 .navbar-logo {
@@ -346,4 +368,79 @@ a.button:hover {
     margin-bottom: 0px;
     text-decoration: none;
     max-width: 80px;
+}
+
+.divider hr {
+    align-self: start;
+    margin-left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    min-width: 1px;
+    min-height: 250px;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered {
+    padding-left: 100px;
+    padding-right: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+}
+
+
+
+@media (max-width: 800px), (max-width: 10cm) {
+    .boxed {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .padding {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+
+    .image-text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-text hr {
+        align-self: start;
+        margin-left: 0;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        text-decoration: none;
+        min-width: 400px;
+        min-height: 1px;
+    }
+    
+    .vertical-buttons {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+    }
 }

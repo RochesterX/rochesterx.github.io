@@ -326,7 +326,7 @@ a.button:hover {
 .card-image {
     border: solid white 0px;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .manual-image {

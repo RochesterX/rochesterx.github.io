@@ -144,7 +144,7 @@ hr {
 
 .manual {
     opacity: 0;
-    animation: largeFadeIn 1s 1s ease-out forwards;
+    animation: largeFadeIn 1s 0s ease-out forwards;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -385,6 +385,9 @@ a.button:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    opacity: 0;
+    animation: largeFadeIn 1s 0s ease-out forwards;
 }
 
 .centered {

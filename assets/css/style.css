@@ -109,6 +109,17 @@ hr {
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 
+.outline {
+    border: 3px solid #606060;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 6px 6px 8px rgba(255, 255, 255, 0.1);
+    padding: 3px;
+    gap: 15px;
+}
+
 .boxed-unlimited {
     border: 3px solid #606060;
     margin: 10px;
